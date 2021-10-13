@@ -1,52 +1,52 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-  padding:0;
-  margin:0;
-  box-sizing:border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-  font-family: 'Lato', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
   color: #fff;
+  overflow-x: hidden;
 }
-.main{
-  background-image: url("../image/home.png");
+.main {
+  background-image: url("../image/hero.jpg");
   height: 90vh;
   width: 100vw;
   display: flex;
 }
-.main-text{
+.main-text {
   height: 100vh;
-  align-items: center;
-  font-size: 1.3rem;
-  color:#fff;
-  padding: 30vh 20vw 10vh;
+  width: 40vw;
+  /* align-items: center; */
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 35vh 7vw 10vh;
   font-weight: 500;
-  
 }
-.main-text h1{
-  font-size: 3rem;
-  text-align: center;
+.main-text h1 {
+  font-size: 2rem;
+  /* text-align: center; */
   margin-bottom: 25px;
 }
-.main-text p{
+.main-text p {
   text-align: justify;
   text-justify: inter-word;
   text-indent: 50px;
+  margin-bottom: 25px;
 }
-.btn-action{
-  display: inline-block;
+.btn-action {
   padding: 10px 30px;
   background-color: #f60f20;
-  font-size:1.2rem;
-  color:#fff;
+  font-size: 1.2rem;
+  color: #fff;
   cursor: pointer;
-  border:none;
+  border: none;
   text-decoration: none;
   margin-top: 15px;
 }
-.news{
+.news {
   height: 100vh;
 }
-
