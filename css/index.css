@@ -47,6 +47,31 @@ body {
   text-decoration: none;
   margin-top: 15px;
 }
-.news {
+.what-to-do {
   height: 100vh;
+  background-color: #fff;
+  color:#000;
+  margin:100px 250px;
+}
+.card{
+  width: 350px;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 40px ;
+}
+.card img{
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.card-btn {
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #f60f20;
+  font-size: .90rem;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  margin-top: 15px;
 }
