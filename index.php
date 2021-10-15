@@ -64,6 +64,8 @@
             <a href="#"class="card-btn">Play Video <span class="btn-icon"><i class="fas fa-play-circle"></i> </span> </a>
         </div></div>
     </section>
-    <div>contacts</div>
+    <div class="contact">
+        
+    </div>
 </body>
 </html>
