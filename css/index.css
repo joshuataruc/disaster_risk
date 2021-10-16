@@ -183,7 +183,7 @@ body {
    z-index: 2;
    transform: scale(1.02);
 }
-.contacts-table tbody tr a:hover{
+.contacts-table tbody tr td a:hover{
   color: #fff;
   border-color: #fff;
 }
@@ -195,4 +195,98 @@ body {
   border-bottom: 2px solid #f60f20;
 }
 
+/* tablet */
+
+@media screen and (max-width:768px) {
+    .main {
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    height: auto;
+  }
+  .main-text h1 {
+  font-size: 1.2rem;
+  /* text-align: center; */
+    margin-bottom: 20px;
+  }
+    .main-text {
+    font-size: 0.9rem;
+    padding: 100px 25px 80px;
+    height: auto;
+  }
+  .btn-action {
+  font-size: 0.9rem;
+  margin-top: 15px;
+  }
+
+  /* cards */
+  .what-to-do-title{
+  font-size: 1.5rem;
+  margin-top: 15px;
+  }
+  .what-to-do-content {
+  margin:20px 0px;
+}
+  .card{
+  max-width: 300px;
+  margin: 5px 5px 10px;
+}
+
+.card-body{
+  padding: 10px 30px  ;
+}
+.card-body h3{
+  font-weight: bold;
+  font-size: 1rem;
+}
+.card-body p{
+  font-size: 0.9rem;
+}
+.card-btn {
+  font-size: .85rem;
+}
+
+/* table */
+.contacts-table{
+  min-width: 300px;
+}
+.contacts h1{
+  padding: 50px 0 30px;
+  text-align: center;
+  font-size: 3rem;
+}
+/* contacts table */
+.table-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contacts-table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  max-width: 700px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contacts-table thead tr{
+  font-size: 0.9rem;
+}
+.contacts-table th{
+  padding: 12px 35px;
+  
+}
+.contacts-table td{
+  padding: 20px 35px;
+  font-size: .8rem;
+}
+.contacts-table tbody tr a{
+
+  padding: 6px 15px;
+}
+
+
+
+}/* end @media screen 768px */
 
