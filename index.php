@@ -118,4 +118,16 @@
         </div>
     </div>
 </body>
+<footer class="footer">
+    <div class="footer-content ">
+        <h2>Quick Links</h2>
+       <div class="grid grid-5">
+                <div class="footer-link"><a href="#home">Home</a></div>
+                <div class="footer-link"><a href="#contact">What to do</a></div>
+                <div class="footer-link"><a href="#about">Contacts</a></div>
+                <div class="footer-link"><a href="login.php">Register</a></div>
+                <div class="footer-link"><a href="login.php">Login</a></div>
+       </div>
+    </div>
+</footer>
 </html>

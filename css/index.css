@@ -195,6 +195,35 @@ body {
   border-bottom: 2px solid #f60f20;
 }
 
+.footer{
+  background-color: #f60f20;
+  padding: 50px 150px;
+  width: 100vw;
+}
+.grid{
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.grid-5{
+  grid-template-columns: repeat(5, 1fr);
+}
+footer h2{
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+footer a{
+  color:#fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.footer .footer-link{
+  text-align: center;
+}
+
 /* tablet */
 
 @media screen and (max-width:768px) {
@@ -285,8 +314,5 @@ body {
 
   padding: 6px 15px;
 }
-
-
-
 }/* end @media screen 768px */
 
