@@ -14,7 +14,7 @@
     <section class="main">
         <div class="main-text">
             <h1>Disaster Preparedness and Risk Reduction Portal</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sit ipsam voluptatem, odio quo dolorem similique quod? Repudiandae inventore tempore ab consectetur nihil nam, dolor tenetur et! Quam, blanditiis officiis?</p>
+            <p>Disasters are severe disturbances to a community's ability to cope utilizing its own resources. Natural, man-made, and technical risks, as well as various elements that influence a community's exposure and vulnerability, can all lead to disaster.</p>
             <a href="#"class="btn-action">Call to Action</a>
         </div>
     </section>
