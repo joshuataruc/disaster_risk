@@ -21,7 +21,7 @@
 
    
     <section class="what-to-do" >
-    <h1 class="what-to-do-title">WHAT TO DO WHEN</h1>
+    <h1 class="what-to-do-title" id="what-to-do">WHAT TO DO WHEN</h1>
         <div class="what-to-do-content">
             <div class="card">
             <img src="image/flood.jpg" alt="">
@@ -64,7 +64,7 @@
             <a href="#"class="card-btn">Play Video <span class="btn-icon"><i class="fas fa-play-circle"></i> </span> </a>
         </div></div>
     </section>
-    <div class="contacts">
+    <div class="contacts" id="contacts">
         <h1>LIST OF HOSPITALS IN TARLAC</h1>
         <div class="table-container">
             <table class="contacts-table">
@@ -122,10 +122,10 @@
     <div class="footer-content ">
         <h2>Quick Links</h2>
        <div class="grid grid-5">
-                <div class="footer-link"><a href="#home">Home</a></div>
-                <div class="footer-link"><a href="#contact">What to do</a></div>
-                <div class="footer-link"><a href="#about">Contacts</a></div>
-                <div class="footer-link"><a href="login.php">Register</a></div>
+                <div class="footer-link"><a href="index.php">Home</a></div>
+                <div class="footer-link"><a href="index.php#what-to-do">What to do</a></div>
+                <div class="footer-link"><a href="index.php#contacts">Contacts</a></div>
+                <div class="footer-link"><a href="register.php">Register</a></div>
                 <div class="footer-link"><a href="login.php">Login</a></div>
        </div>
     </div>

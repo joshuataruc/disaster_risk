@@ -10,10 +10,10 @@
    </label>
    <label class="nav-logo">DPRRP </label>
    <ul>
-     <li><a href="#home">Home</a></li>
-     <li><a href="#contact">What to do</a></li>
-     <li><a href="#about">Contacts</a></li>
-     <li><a href="login.php">Register</a></li>
+     <li><a href="index.php">Home</a></li>
+     <li><a href="index.php#what-to-do">What to do</a></li>
+     <li><a href="index.php#contacts">Contacts</a></li>
+     <li><a href="register.php">Register</a></li>
      <li><a href="login.php">Login</a></li>
    </ul>
  </nav> 

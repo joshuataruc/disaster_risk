@@ -5,7 +5,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", sans-serif;
   color: #fff;
@@ -46,9 +48,9 @@ body {
   border: none;
   text-decoration: none;
   margin-top: 15px;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-.btn-action:hover{
+.btn-action:hover {
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 2px;
@@ -56,7 +58,7 @@ body {
 
 /* what to do */
 
-.what-to-do-title{
+.what-to-do-title {
   color: #000;
   font-size: 3rem;
   text-align: center;
@@ -65,32 +67,32 @@ body {
 
 .what-to-do-content {
   background-color: #fff;
-  color:#000;
-  margin:20px 200px;
+  color: #000;
+  margin: 20px 200px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-.card{
+.card {
   max-width: 400px;
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 15px;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-.card img{
+.card img {
   width: 100%;
   text-align: center;
 }
-.card-body{
-  padding: 30px 40px  ;
+.card-body {
+  padding: 30px 40px;
 }
-.card-body h3{
+.card-body h3 {
   font-weight: bold;
   font-size: 1.5rem;
 }
-.card-body p{
+.card-body p {
   text-align: left;
 }
 .card-btn {
@@ -98,49 +100,49 @@ body {
   text-align: center;
   padding: 10px 30px;
   background-color: #f60f20;
-  font-size: .90rem;
+  font-size: 0.9rem;
   color: #fff;
   cursor: pointer;
   border: none;
   text-decoration: none;
   width: 100%;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-.card .card-body .card-btn span{
+.card .card-body .card-btn span {
   visibility: hidden;
 }
-.btn-icon{
+.btn-icon {
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-.card-btn:hover .btn-icon{
+.card-btn:hover .btn-icon {
   opacity: 1;
 }
-.card:hover{
- transform: scale(1.05);
- box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* contact */
-.contacts{
+.contacts {
   width: 100vw;
   background-color: #f9f9f9;
   height: auto;
   color: #000;
   font-size: 1.1rem;
 }
-.contacts h1{
+.contacts h1 {
   padding: 50px 0 30px;
   text-align: center;
   font-size: 3rem;
 }
 /* contacts table */
-.table-container{
+.table-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.contacts-table{
+.contacts-table {
   border-collapse: collapse;
   margin: 25px 0;
   min-width: 400px;
@@ -149,24 +151,23 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.contacts-table thead tr{
+.contacts-table thead tr {
   background-color: #f60f20;
   color: #fff;
   text-align: left;
   font-weight: bold;
 }
-.contacts-table th{
+.contacts-table th {
   padding: 12px 45px;
-  
 }
-.contacts-table td{
+.contacts-table td {
   padding: 20px 45px;
   margin-bottom: 5px;
 }
-.contacts-table tbody tr{
-  transition: .5s ease-in-out;
+.contacts-table tbody tr {
+  transition: 0.5s ease-in-out;
 }
-.contacts-table tbody tr a{
+.contacts-table tbody tr a {
   color: #f60f20;
   background-color: transparent;
   padding: 8px 20px;
@@ -175,144 +176,142 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-.contacts-table tbody tr:hover{
+.contacts-table tbody tr:hover {
   background-color: #e75b65;
-   box-shadow: 10px 6px 10px 6px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   border-bottom: none;
-   color: #fff;
-   z-index: 2;
-   transform: scale(1.02);
+  box-shadow: 10px 6px 10px 6px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom: none;
+  color: #fff;
+  z-index: 2;
+  transform: scale(1.02);
 }
-.contacts-table tbody tr td a:hover{
+.contacts-table tbody tr td a:hover {
   color: #fff;
   border-color: #fff;
 }
 
-.contacts-table tbody tr{
+.contacts-table tbody tr {
   border-bottom: 1px solid #ddd;
 }
-.contacts-table tbody tr:last-of-type{
+.contacts-table tbody tr:last-of-type {
   border-bottom: 2px solid #f60f20;
 }
 
-.footer{
+.footer {
   background-color: #f60f20;
   padding: 50px 150px;
   width: 100vw;
 }
-.grid{
+.grid {
   display: grid;
   gap: 20px;
   justify-content: center;
   align-items: center;
 }
-.grid-5{
+.grid-5 {
   grid-template-columns: repeat(5, 1fr);
 }
-footer h2{
+footer h2 {
   font-size: 2rem;
   margin-bottom: 15px;
   text-align: center;
 }
-footer a{
-  color:#fff;
+footer a {
+  color: #fff;
   text-align: center;
   text-decoration: none;
   font-size: 1.1rem;
 }
-.footer .footer-link{
+.footer .footer-link {
   text-align: center;
 }
 
 /* tablet */
 
-@media screen and (max-width:768px) {
-    .main {
+@media screen and (max-width: 768px) {
+  .main {
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
     height: auto;
   }
   .main-text h1 {
-  font-size: 1.2rem;
-  /* text-align: center; */
+    font-size: 1.2rem;
+    /* text-align: center; */
     margin-bottom: 20px;
   }
-    .main-text {
+  .main-text {
     font-size: 0.9rem;
     padding: 100px 25px 80px;
     height: auto;
   }
   .btn-action {
-  font-size: 0.9rem;
-  margin-top: 15px;
+    font-size: 0.9rem;
+    margin-top: 15px;
   }
 
   /* cards */
-  .what-to-do-title{
-  font-size: 1.5rem;
-  margin-top: 15px;
+  .what-to-do-title {
+    font-size: 1.5rem;
+    margin-top: 15px;
   }
   .what-to-do-content {
-  margin:20px 0px;
-}
-  .card{
-  max-width: 300px;
-  margin: 5px 5px 10px;
-}
+    margin: 20px 0px;
+  }
+  .card {
+    max-width: 300px;
+    margin: 5px 5px 10px;
+  }
 
-.card-body{
-  padding: 10px 30px  ;
-}
-.card-body h3{
-  font-weight: bold;
-  font-size: 1rem;
-}
-.card-body p{
-  font-size: 0.9rem;
-}
-.card-btn {
-  font-size: .85rem;
-}
+  .card-body {
+    padding: 10px 30px;
+  }
+  .card-body h3 {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .card-body p {
+    font-size: 0.9rem;
+  }
+  .card-btn {
+    font-size: 0.85rem;
+  }
 
-/* table */
-.contacts-table{
-  min-width: 300px;
-}
-.contacts h1{
-  padding: 50px 0 30px;
-  text-align: center;
-  font-size: 3rem;
-}
-/* contacts table */
-.table-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.contacts-table{
-  border-collapse: collapse;
-  margin: 25px 0;
-  max-width: 700px;
-  border-radius: 5px 5px 0 0;
-  overflow: hidden;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+  /* table */
+  .contacts-table {
+    min-width: 300px;
+  }
+  .contacts h1 {
+    padding: 50px 0 30px;
+    text-align: center;
+    font-size: 3rem;
+  }
+  /* contacts table */
+  .table-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contacts-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    max-width: 700px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 
-.contacts-table thead tr{
-  font-size: 0.9rem;
-}
-.contacts-table th{
-  padding: 12px 35px;
-  
-}
-.contacts-table td{
-  padding: 20px 35px;
-  font-size: .8rem;
-}
-.contacts-table tbody tr a{
-
-  padding: 6px 15px;
-}
-}/* end @media screen 768px */
-
+  .contacts-table thead tr {
+    font-size: 0.9rem;
+  }
+  .contacts-table th {
+    padding: 12px 35px;
+  }
+  .contacts-table td {
+    padding: 20px 35px;
+    font-size: 0.8rem;
+  }
+  .contacts-table tbody tr a {
+    padding: 6px 15px;
+  }
+} /* end @media screen 768px */

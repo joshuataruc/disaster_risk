@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* reset */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  color: #111;
+}
+/* utilities */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #0d1117; */
+  background-color: #f9f9f9;
+  height: 90vh;
+}
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.grid-2 {
+  grid-template-columns: 40% 60%;
+}
+.grid-2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 15px;
+}
+.right {
+  float: right;
+}
+.text-success {
+  color: #28a745 !important;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.text-danger {
+  color: #dc3545 !important;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.vertical-align {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* css */
+
+/* register */
+.register {
+  position: relative;
+  width: 100%;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.register .register-form {
+  position: relative;
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 50px 50px 20px;
+}
+.register .register-form form {
+  width: 100%;
+}
+.register .register-form .row {
+  display: flex;
+  width: 100%;
+}
+.register .register-form .row .input-1 {
+  width: 100%;
+  margin: 0 15px;
+}
+.register .register-form .row .input-2 {
+  width: 50%;
+  margin: 0 15px;
+}
+.register .register-form .row .input-3 {
+  width: 33.33%;
+  margin: 0 15px;
+}
+.input-1 .label,
+.input-2 .label,
+.input-3 label,
+.input-3 input[type="text"] {
+  display: block;
+}
+
+.input-1 .label,
+.input-2 .label,
+.input-3 .label {
+  margin-bottom: 10px;
+}
+.register-form input[type="text"],
+.register-form input[type="date"],
+.register-form input[type="password"],
+.register-form textarea {
+  position: relative;
+  border: 1px solid #ced4da;
+  padding: 15px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  resize: none;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.register-form textarea {
+  font-weight: 400;
+}
+
+.register-form input[type="text"]:focus,
+.register-form input[type="date"]:focus,
+.register-form textarea:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.1em rgba(0, 123, 255, 0.25);
+}
+.btn-reg {
+  display: flex;
+  /* justify-content: flex-end; */
+  float: right;
+  padding: 15px 25px;
+  margin: 0 15px;
+  width: 10%;
+  color: #fff;
+  background-color: #111;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.btn-reg:hover {
+  opacity: 0.9;
+}
+input[type="submit"]:disabled {
+  cursor: not-allowed;
+  background-color: #6c757d;
+}
