@@ -36,7 +36,7 @@
           </h3>
           <?php unset($_SESSION['flash_success']) ?>
           <?php } ?>
-          <form action="user_acc/pending_user.php" method="post">
+          <form action="users/register_user.php" method="post">
             <div class="row">
               <div class="input-3">
                 <label for="" class="label">First Name</label>
