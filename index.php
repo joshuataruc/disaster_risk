@@ -32,7 +32,7 @@
       .modal-inside-container ul li {
         margin: 5px 0;
       }
-      .modal-inside-container ul li, .modal-inside-container h3, .modal-inside-container, h1{
+      .modal-inside-container ul li, .modal-inside-container h3, .modal-inside-container h1{
        color: #111 !important;
       }
     </style>
@@ -41,7 +41,7 @@
     <?php include_once 'nav.php'; ?>
     <section class="main">
       <div class="main-text">
-        <h1>Disaster Preparedness and Risk Reduction Portal</h1>
+        <h1 class="main-title">Disaster Preparedness and Risk Reduction Portal</h1>
         <p>
           Disasters are severe disturbances to a community's ability to cope
           utilizing its own resources. Natural, man-made, and technical risks,
