@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Register</title>
   </head>
   <style>
@@ -20,21 +22,27 @@
     nav ul li a:hover:after {
       background: #000;
     }
+    .text-danger{
+      color:#f60f20;
+    }
+    .text-success{
+      color: #007bff;
+    }
   </style>
   <body>
     <?php include_once 'nav.php'; ?>
     <div class="container">
       <div class="register" id="register">
         <div class="register-form">
-          <?php if (isset($_SESSION['flash'])) { ?>
-          <h3 class="text-danger"><?php echo $_SESSION['flash']; ?></h3>
-          <?php unset($_SESSION['flash']) ?>
+          <?php if (isset($_SESSION['flash-error'])) { ?>
+          <h3 class="text-danger"><?php echo $_SESSION['flash-error']; ?></h3>
+          <?php unset($_SESSION['flash-error']) ?>
           <?php } ?>
-          <?php if (isset($_SESSION['flash_success'])) { ?>
+          <?php if (isset($_SESSION['flash-success'])) { ?>
           <h3 class="text-success">
-            <?php echo $_SESSION['flash_success']; ?>
+            <?php echo $_SESSION['flash-success']; ?>
           </h3>
-          <?php unset($_SESSION['flash_success']) ?>
+          <?php unset($_SESSION['flash-success']) ?>
           <?php } ?>
           <form action="users/register_user.php" method="post">
             <div class="row">

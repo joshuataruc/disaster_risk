@@ -1,0 +1,12 @@
+.button-container{
+    margin-top:50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sos-button{
+    padding: 100px;
+    border:none;
+    border-radius: 50%;
+    font-size:2rem;
+}
