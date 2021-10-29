@@ -1,12 +1,36 @@
-.button-container{
-    margin-top:50px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.button-container {
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.sos-button{
-    padding: 100px;
-    border:none;
-    border-radius: 50%;
-    font-size:2rem;
+.sos-button {
+  padding: 70px 80px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  background-color: #df2029;
+  color: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s ease-in-out;
+}
+.sos-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img {
+  width: 100px;
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    background-color: black;
+  }
+  .sos-button {
+    padding: 30px 40px;
+    font-size: 0.9rem;
+  }
+  img {
+    width: 50px;
+  }
 }

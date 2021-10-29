@@ -12,3 +12,4 @@ $_SESSION['mname'];
 $_SESSION['lname'];
 $_SESSION['cont_num'];
 $_SESSION['username'];
+$_SESSION['address'];

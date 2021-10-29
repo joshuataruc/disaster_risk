@@ -20,7 +20,8 @@ if (mysqli_num_rows($user_query) > 0) {
         $user_cont_num = $_SESSION['cont_num'] = $user_data['cont_num'];
         $user_address = $_SESSION['address'] = $user_data['address'];
         $user_username = $_SESSION['username'] = $user_data['username'];
-        header("Location: dashboard.php");
+        $user_address = $_SESSION['address'] = $user_data['address'];
+        header("Location: sendSOS.php");
     } else {
         $_SESSION['flash-error'] = ' <i class="fas fa-exclamation-triangle"></i>  Username and Password Didnt Match';
         header("Location: login.php");
