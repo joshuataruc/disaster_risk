@@ -63,7 +63,8 @@ nav ul li a:hover:after {
 
 .checkbtn {
   font-size: 18px;
-  color: #37474f;
+  /* color: #37474f; */
+  color: #fff;
   float: right;
   line-height: 50px;
   margin-right: 40px;
@@ -87,7 +88,7 @@ nav ul li a:hover:after {
 @media (max-width: 858px) {
   .checkbtn {
     display: block;
-    color: #37474f;
+    color: #fff;
   }
   ul {
     position: fixed;
@@ -104,6 +105,8 @@ nav ul li a:hover:after {
   }
   nav ul li a {
     font-size: 20px;
+    color: #000;
+    transition: .5s ease-in;
   }
   nav ul li a:hover {
     color: #000;

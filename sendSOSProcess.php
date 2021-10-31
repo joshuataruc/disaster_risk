@@ -10,22 +10,26 @@ $address = $_SESSION['address'];
 $user_id = $_SESSION['user_id'];
 
 if (isset($_POST['brgyBtn'])) {
-    $sosType = 'Barangay';
+    $sosType = 'Barangay Emergency';
 }
 if (isset($_POST['policeBtn'])) {
-    $sosType = 'Police';
+    $sosType = 'Crime Emergency';
 }
 if (isset($_POST['hospitalBtn'])) {
-    $sosType = 'Hospital';
+    $sosType = 'Medical Emergency';
 }
 if (isset($_POST['fireBtn'])) {
-    $sosType = 'Fire';
+    $sosType = 'Fire Emergency';
 }
 
 
 $sendSOS = "INSERT INTO notification (sender_fname,	sender_lname, address, sender_contact_num, sos_type, created_at, sender_id)  VALUES ('$fname', '$lname', '$address', '$cont_num', '$sosType', '$created_at', '$user_id')";
-if (mysqli_query($con, $sendSOS) === true) {
-    header('location:notif.php');
+$sendSOS_query = mysqli_query($con, $sendSOS) or die($con->error);
+if ($sendSOS_query) {
+    $_SESSION['flash-success'] = ' <i class="far fa-check-circle"></i>  Request Sent';
+    header('location:sendSOS.php');
+    
 } else {
-    die($con->error);
+    $_SESSION['flash-error'] = ' <i class="fas fa-exclamation-triangle"></i>  Something Went Wrong';
+    header('location:sendSOS.php');
 }

@@ -56,6 +56,9 @@
           <input type="submit" value="Login" class="btn-login" />
         </div>
       </form>
+      <div class="input-1">
+        <a href="admins/login.php">Login as admin</a>
+      </div>
     </div>
   </div>
 </body>
