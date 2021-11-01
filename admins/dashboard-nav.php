@@ -2,6 +2,7 @@
 
 include_once '../session_check2.php';
 
+
 // echo $_SESSION['username'];
 ?>
 
@@ -43,6 +44,7 @@ include_once '../session_check2.php';
       <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="notif.php">Notification</a>
         <a class="p-2 text-dark" href="sosReport.php">SOS Reports</a>
+        <a class="p-2 text-dark" href="users.php">Users</a>
         <a class="p-2 text-dark" href="admins.php"
           ><?php echo ucfirst($_SESSION['username']); ?></a
         >

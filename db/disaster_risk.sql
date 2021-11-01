@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 31, 2021 at 06:28 AM
+-- Generation Time: Nov 01, 2021 at 03:48 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.0
 
@@ -63,29 +63,52 @@ CREATE TABLE `notification` (
   `address` varchar(255) NOT NULL,
   `sender_contact_num` varchar(15) NOT NULL,
   `sos_type` varchar(50) NOT NULL,
-  `responded_by` varchar(20) NOT NULL,
-  `created_at` varchar(25) NOT NULL,
-  `time_responded` varchar(20) NOT NULL,
-  `updated_at` datetime NOT NULL DEFAULT current_timestamp()
+  `created_at` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `notification`
 --
 
-INSERT INTO `notification` (`notif_id`, `sender_id`, `sender_fname`, `sender_lname`, `address`, `sender_contact_num`, `sos_type`, `responded_by`, `created_at`, `time_responded`, `updated_at`) VALUES
-(25, '2', 'test', 'test', 'test address', '2252525', 'Crime Emergency', '2', '2021/10/30 10:47:09 pm', '04:48:32 pm', '2021-10-30 22:47:09'),
-(26, '2', 'test', 'test', 'test address', '2252525', 'Barangay Emergency', '2', '2021/10/30 10:49:40 pm', '06:06:40 am', '2021-10-30 22:49:40'),
-(27, '2', 'test', 'test', 'test address', '2252525', 'Barangay Emergency', '2', '2021/10/30 10:50:03 pm', '06:06:39 am', '2021-10-30 22:50:03'),
-(28, '2', 'test', 'test', 'test address', '2252525', 'Medical Emergency', '2', '2021/10/30 10:52:01 pm', '06:06:38 am', '2021-10-30 22:52:01'),
-(29, '2', 'test', 'test', 'test address', '2252525', 'Crime Emergency', '2', '2021/10/30 10:53:01 pm', '02:06:37 am', '2021-10-30 22:53:01'),
-(30, '2', 'test', 'test', 'test address', '2252525', 'Medical Emergency', '2', '2021/10/30 10:53:03 pm', '06:06:37 am', '2021-10-30 22:53:03'),
-(31, '2', 'test', 'test', 'test address', '2252525', 'Medical Emergency', '2', '2021/10/30 10:53:04 pm', '06:06:36 am', '2021-10-30 22:53:04'),
-(32, '2', 'test', 'test', 'test address', '2252525', 'Medical Emergency', '2', '2021/10/30 10:53:17 pm', '05:41:09 pm', '2021-10-30 22:53:17'),
-(33, '2', 'test', 'test', 'test address', '2252525', 'Medical Emergency', '2', '2021/10/30 10:53:44 pm', '04:59:14 pm', '2021-10-30 22:53:44'),
-(34, '2', 'test', 'test', 'test address', '2252525', 'Fire Emergency', '2', '2021/10/30 10:53:57 pm', '04:54:07 pm', '2021-10-30 22:53:57'),
-(35, '2', 'test', 'test', 'test address', '2252525', 'Barangay Emergency', '2', '2021/10/30 11:50:35 pm', '02:06:29 am', '2021-10-30 23:50:35'),
-(36, '2', 'test', 'test', 'test address', '2252525', 'Crime Emergency', '', '2021/10/31 01:08:05 pm', '', '2021-10-31 13:08:05');
+INSERT INTO `notification` (`notif_id`, `sender_id`, `sender_fname`, `sender_lname`, `address`, `sender_contact_num`, `sos_type`, `created_at`) VALUES
+(28, '2', 'test', 'test', 'test address', '2252525', 'Medical Emergency', '2021/10/30 10:52:01 pm'),
+(29, '2', 'test', 'test', 'test address', '2252525', 'Crime Emergency', '2021/10/30 10:53:01 pm'),
+(30, '2', 'test', 'test', 'test address', '2252525', 'Medical Emergency', '2021/10/30 10:53:03 pm'),
+(31, '2', 'test', 'test', 'test address', '2252525', 'Medical Emergency', '2021/10/30 10:53:04 pm'),
+(32, '2', 'test', 'test', 'test address', '2252525', 'Medical Emergency', '2021/10/30 10:53:17 pm'),
+(33, '2', 'test', 'test', 'test address', '2252525', 'Medical Emergency', '2021/10/30 10:53:44 pm'),
+(34, '2', 'test', 'test', 'test address', '2252525', 'Fire Emergency', '2021/10/30 10:53:57 pm'),
+(35, '2', 'test', 'test', 'test address', '2252525', 'Barangay Emergency', '2021/10/30 11:50:35 pm'),
+(36, '2', 'test', 'test', 'test address', '2252525', 'Crime Emergency', '2021/10/31 01:08:05 pm'),
+(37, '2', 'test', 'test', 'test address', '2252525', 'Medical Emergency', '2021/11/01 09:33:20 pm');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sos_reports`
+--
+
+CREATE TABLE `sos_reports` (
+  `report_id` int(11) NOT NULL,
+  `sender_id` varchar(50) NOT NULL,
+  `sender_fname` varchar(50) NOT NULL,
+  `sender_lname` varchar(50) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `sender_contact_num` varchar(15) NOT NULL,
+  `sos_type` varchar(50) NOT NULL,
+  `responded_by` varchar(20) NOT NULL,
+  `created_at` varchar(25) NOT NULL,
+  `time_responded` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `sos_reports`
+--
+
+INSERT INTO `sos_reports` (`report_id`, `sender_id`, `sender_fname`, `sender_lname`, `address`, `sender_contact_num`, `sos_type`, `responded_by`, `created_at`, `time_responded`) VALUES
+(2, '2', 'test', 'test', 'test address', '2252525', 'Crime Emergency', '3', '2021/10/30 10:47:09 pm', '03:42:28 pm'),
+(3, '2', 'test', 'test', 'test address', '2252525', 'Barangay Emergency', '3', '2021/10/30 10:49:40 pm', '03:43:30 pm'),
+(4, '2', 'test', 'test', 'test address', '2252525', 'Barangay Emergency', '3', '2021/10/30 10:50:03 pm', '10:46:00 pm');
 
 -- --------------------------------------------------------
 
@@ -131,6 +154,12 @@ ALTER TABLE `notification`
   ADD PRIMARY KEY (`notif_id`);
 
 --
+-- Indexes for table `sos_reports`
+--
+ALTER TABLE `sos_reports`
+  ADD PRIMARY KEY (`report_id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -150,7 +179,13 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `notification`
 --
 ALTER TABLE `notification`
-  MODIFY `notif_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `notif_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+
+--
+-- AUTO_INCREMENT for table `sos_reports`
+--
+ALTER TABLE `sos_reports`
+  MODIFY `report_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`

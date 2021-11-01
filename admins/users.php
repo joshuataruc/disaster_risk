@@ -3,8 +3,8 @@
 include_once '../db/connection.php';
 include_once 'dashboard-nav.php';
 $blank = '';
-$select_reports = "SELECT * FROM sos_reports ORDER BY report_id desc ";
-$reports_query = mysqli_query($con, $select_reports);
+$select_user = "SELECT * FROM users ORDER BY user_id desc ";
+$user_query = mysqli_query($con, $select_user);
 
 
 ?>
@@ -42,25 +42,24 @@ $reports_query = mysqli_query($con, $select_reports);
 				<table id="user_tbl" class="table display table-hover">
 					<thead>		 	
 						<tr>
-							<th>SOS Type</th>
-							<th>Name </th>
-							<th>Address</th>
+							<th>Name/th>
+							<th>Username </th>
+							<th>Birthday</th>
 							<th>Contact #</th>
-							<th>Responder ID</th>
-							<th>Report Date</th>
-							<th>Respond Time</th>
+							<th>Address</th>
+							<th>Created at</th>
+                            <!-- fname	mname	lname	username	date_of_birth	cont_num	address	created_at 	 -->
 						</tr>
 					</thead>
 					<tbody>
-						<?php while ($user_row = $reports_query->fetch_assoc()) : ?>
+						<?php while ($user_row = $user_query->fetch_assoc()) : ?>
 							<tr>
-								<td><?php echo $user_row['sos_type']; ?></td>
-								<td><?php echo $user_row['sender_fname'] . ' ' .  $user_row['sender_lname']; ?></td>
+								<td><?php echo $user_row['fname'] . ' ' .  $user_row['mname']. ' ' .  $user_row['lname']; ?></td>
+								<td><?php echo $user_row['username']; ?></td>
+								<td><?php echo $user_row['date_of_birth']; ?></td>
+								<td><?php echo $user_row['cont_num']; ?></td>
 								<td><?php echo $user_row['address']; ?></td>
-								<td><?php echo $user_row['sender_contact_num']; ?></td>
-								<td><?php echo $user_row['responded_by']; ?></td>
 								<td><?php echo $user_row['created_at']; ?></td>
-								<td><?php echo $user_row['time_responded']; ?></td>
 								
 								
 							</tr>
@@ -86,7 +85,7 @@ $reports_query = mysqli_query($con, $select_reports);
 	<script src="../js/bootstrap.min.js"></script>
 	<script>
 		$('#user_tbl').DataTable({
-
+              "order": [[ 3, "desc" ]],
 			dom: 'lBfrtip',
 			"lengthMenu": [
 				[10, 25, 50, -1],
@@ -105,7 +104,6 @@ $reports_query = mysqli_query($con, $select_reports);
 					previous: '<i class="fas fa-chevron-left"></i></i>'
 				}
 			}
-
 		});
 		$('[data-toggle="tooltip"]').tooltip();
 	</script>

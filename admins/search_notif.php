@@ -1,7 +1,7 @@
 
 <?php
 include_once '../db/connection.php';
-$get_notif = "SELECT * FROM notification WHERE responded_by = '' && time_responded = '' ORDER BY notif_id DESC ";
+$get_notif = "SELECT * FROM notification ORDER BY notif_id DESC";
 $notif_query = mysqli_query($con, $get_notif) or die($con->error);
 
 if(mysqli_num_rows($notif_query) > 0){
