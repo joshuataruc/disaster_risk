@@ -1,7 +1,7 @@
 <?php session_start();
 
 include_once 'db/connection.php';
-$select_events = "SELECT * FROM events ORDER BY event_id DESC ";
+$select_events = "SELECT * FROM events ORDER BY event_id DESC LIMIT 10";
 $events_query = mysqli_query($con, $select_events);
 
  ?>
