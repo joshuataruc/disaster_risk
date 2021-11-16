@@ -38,12 +38,13 @@ include_once '../session_check2.php';
       "
     >
       <!-- <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5> -->
-      <a class="my-0 mr-md-auto font-weight-normal" href="index.php"
+      <a class="my-0 mr-md-auto font-weight-normal" href="../index.php"
         ><b>DPRRP</b></a
       >
       <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="notif.php">Notification</a>
         <a class="p-2 text-dark" href="sosReport.php">SOS Reports</a>
+        <a class="p-2 text-dark" href="events.php">Events</a>
         <a class="p-2 text-dark" href="users.php">Users</a>
         <a class="p-2 text-dark" href="admins.php"
           ><?php echo ucfirst($_SESSION['username']); ?></a

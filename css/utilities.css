@@ -86,6 +86,7 @@ body {
 }
 .register .register-form form {
   width: 100%;
+  
 }
 .register .register-form .row {
   display: flex;
@@ -106,6 +107,7 @@ body {
 .input-1 .label,
 .input-2 .label,
 .input-3 label,
+.input-3 input[type="time"],
 .input-3 input[type="text"] {
   display: block;
 }
@@ -117,6 +119,7 @@ body {
 }
 .register-form input[type="text"],
 .register-form input[type="date"],
+.register-form input[type="time"],
 .register-form input[type="password"],
 .register-form textarea {
   position: relative;
@@ -131,13 +134,18 @@ body {
   font-weight: 300;
   margin-bottom: 15px;
 }
-
+.register-form input[type="text"],
+.register-form input[type="date"],
+.register-form input[type="time"],
+.register-form input[type="password"],
 .register-form textarea {
   font-weight: 400;
+  font-family: "Poppins", sans-serif;
 }
 
 .register-form input[type="text"]:focus,
 .register-form input[type="date"]:focus,
+.register-form input[type="time"]:focus,
 .register-form textarea:focus {
   border-color: #80bdff;
   box-shadow: 0 0 0 0.1em rgba(0, 123, 255, 0.25);
@@ -166,3 +174,12 @@ input[type="submit"]:disabled {
   background-color: #6c757d;
 }
 
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+.text-muted{
+  color:#6c757d;
+}

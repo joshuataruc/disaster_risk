@@ -228,6 +228,28 @@
                 ></a>
               </td>
             </tr>
+            <tr>
+              <td>San Jose Municipal Police Station, Tarlac PPO</td>
+              <td>0908 320 7076</td>
+              <td>National Road, San Jose, 2318</td>
+              <td>
+                <a
+                  href="https://www.google.com/maps/place/San+Jose+Municipal+Police+Station/@15.4776961,120.4624254,18.75z/data=!4m5!3m4!1s0x3396bcc98720c383:0xc99ac3c0bdd89ad2!8m2!3d15.4778935!4d120.462881"
+                  ><i class="fas fa-map-marked"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>Tarlac City </td>
+              <td>0915 708 3979</td>
+              <td>FHRQ+PXC, Brgy. Mabini, Tarlac City, 2300 Tarlac</td>
+              <td>
+                <a
+                  href="https://www.google.com/maps/place/Tarlac+City+Police+Station/@15.4916798,120.5899336,19.92z/data=!4m16!1m10!4m9!1m1!4e2!1m6!1m2!1s0x3396c63bda1725b7:0x3025879242d20502!2starlac+city+police+station!2m2!1d120.589883!2d15.4918163!3m4!1s0x3396c63bda1725b7:0x3025879242d20502!8m2!3d15.4918163!4d120.589883"
+                  ><i class="fas fa-map-marked"></i
+                ></a>
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -242,12 +264,13 @@
   <footer class="footer">
     <div class="footer-content">
       <h2>Quick Links</h2>
-      <div class="grid grid-5">
+      <div class="grid grid-6">
         <div class="footer-link"><a href="index.php">Home</a></div>
         <div class="footer-link">
           <a href="index.php#what-to-do">What to do</a>
         </div>
         <div class="footer-link"><a href="index.php#contacts">Contacts</a></div>
+        <div class="footer-link"><a href="events.php">Events</a></div>
         <div class="footer-link"><a href="register.php">Register</a></div>
         <div class="footer-link"><a href="login.php">Login</a></div>
       </div>

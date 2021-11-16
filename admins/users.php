@@ -42,7 +42,7 @@ $user_query = mysqli_query($con, $select_user);
 				<table id="user_tbl" class="table display table-hover">
 					<thead>		 	
 						<tr>
-							<th>Name/th>
+							<th>Name</th>
 							<th>Username </th>
 							<th>Birthday</th>
 							<th>Contact #</th>

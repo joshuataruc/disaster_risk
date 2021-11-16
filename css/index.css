@@ -209,8 +209,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-.grid-5 {
-  grid-template-columns: repeat(5, 1fr);
+.grid-6 {
+  grid-template-columns: repeat(6, 1fr);
 }
 footer h2 {
   font-size: 2rem;
