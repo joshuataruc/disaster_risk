@@ -60,7 +60,7 @@ $user_row = $user_query->fetch_assoc();
 		</div>
 		<div class="card input-card">
 			<div class="card-body">
-				<form action="update_admin_process.php" method="post">
+				<form action="update_user_process.php" method="post">
 					<div class="row">
 						<input type="hidden" name="id" class="form-control" value="<?php echo $user_row['user_id'] ?>">
 						<div class="form-group col-md-4">

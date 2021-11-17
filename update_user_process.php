@@ -18,20 +18,20 @@ if (isset($_POST['upd_users'])) {
 		$update_users_query = mysqli_query($con, $update_users) or die($con->error);
 		if ($update_users_query) {
 			$_SESSION['flash'] = ' <i class="far fa-check-circle"></i> Account Updated';
-			header("Location: update_admin_form.php");
+			header("Location: update_user_form.php");
 		} else {
 			$_SESSION['flash-error'] = ' <i class="fas fa-exclamation-triangle"></i> Something went Wrong Try Again';
-			header("Location: update_admin_form.php");
+			header("Location: update_user_form.php");
 		}
 	} else {
 		$update_users = "UPDATE users SET username = '$username', password = '$password', fname = 'fname', lname = 'lname',	mname = '$midname', date_of_birth = '$dob', address = '$address', cont_num = '$cont_num' WHERE user_id = '$id'";
 		$update_users_query = mysqli_query($con, $update_users) or die($con->error);
 		if ($update_users_query) {
 			$_SESSION['flash'] = ' <i class="far fa-check-circle"></i> Account Updated';
-			header("Location: update_admin_form.php");
+			header("Location: update_user_form.php");
 		} else {
 			$_SESSION['flash-error'] = ' <i class="fas fa-exclamation-triangle"></i> Something went Wrong Try Again';
-			header("Location: update_admin_form.php");
+			header("Location: update_user_form.php");
 		}
 	}
 }
