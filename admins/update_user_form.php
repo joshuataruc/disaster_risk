@@ -84,9 +84,19 @@ if (mysqli_num_rows($admin_query) > 0) {
                     </div>
                     <!-- end row -->
                     <div class="row">
-                        <div class="input-1">
+                        <div class="input-2">
                             <label for="" class="label">Username</label>
                             <input type="text" name="username" class="form-control" value="<?php echo $row['username']; ?>" />
+                        </div>
+                        <div class="input-2">
+                            <label for="" class="label">Rescuer Type</label>
+                            <select class="" name="rescue_type">
+                                <option value="<?php echo $row['rescue_type']; ?>" hidden selected><?php echo $row['rescue_type']; ?></option>
+                                <option value="Crime Emergency">Crime Emergency</option>
+                                <option value="Fire Emergency">Fire Emergency</option>
+                                <option value="Medical Emergency">Medical Emergency</option>
+                                <option value="Barangay Emergency">Barangay Emergency</option>
+                            </select>
                         </div>
                     </div>
                     <!-- end row -->
@@ -139,19 +149,16 @@ if (mysqli_num_rows($admin_query) > 0) {
     var today = new Date().toISOString().split("T")[0];
     document.getElementsByName("dob")[0].setAttribute("max", today);
 
-    $('#password, #con-password').on('keyup', function(){
-	if ($('#con-password').val() == $('#password').val()) {
-		$('#pass-message').html('Password Match').css('color', '#007bff ');
-		$('#submit-btn').attr('disabled', false);
-	}
-	else{
-		$('#pass-message').html('Password did not Match').css('color', '#dc3545  ');
-		$('#submit-btn').attr('disabled', true);
+    $('#password, #con-password').on('keyup', function() {
+        if ($('#con-password').val() == $('#password').val()) {
+            $('#pass-message').html('Password Match').css('color', '#007bff ');
+            $('#submit-btn').attr('disabled', false);
+        } else {
+            $('#pass-message').html('Password did not Match').css('color', '#dc3545  ');
+            $('#submit-btn').attr('disabled', true);
 
-	}
-});
-
-
+        }
+    });
 </script>
 
 </html>

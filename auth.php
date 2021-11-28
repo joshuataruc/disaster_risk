@@ -21,6 +21,7 @@ if (mysqli_num_rows($user_query) > 0) {
         $user_address = $_SESSION['address'] = $user_data['address'];
         $user_username = $_SESSION['username'] = $user_data['username'];
         $user_address = $_SESSION['address'] = $user_data['address'];
+        $user_rescue_type = $_SESSION['rescue_type'] = $user_data['rescue_type'];
         header("Location: sendSOS.php");
     } else {
         $_SESSION['flash-error'] = ' <i class="fas fa-exclamation-triangle"></i>  Username and Password Didnt Match';

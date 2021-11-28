@@ -117,6 +117,7 @@ body {
 .input-3 .label {
   margin-bottom: 10px;
 }
+.register-form select,
 .register-form input[type="text"],
 .register-form input[type="date"],
 .register-form input[type="time"],
@@ -134,6 +135,7 @@ body {
   font-weight: 300;
   margin-bottom: 15px;
 }
+.register-form select,
 .register-form input[type="text"],
 .register-form input[type="date"],
 .register-form input[type="time"],
@@ -142,7 +144,7 @@ body {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
 }
-
+.register-form select,
 .register-form input[type="text"]:focus,
 .register-form input[type="date"]:focus,
 .register-form input[type="time"]:focus,

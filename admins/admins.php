@@ -58,6 +58,7 @@ $user_query = mysqli_query($con, $select_user);
 						<tr>
 							<th>Username</th>
 							<th>Name </th>
+							<th>Rescuer Type </th>
 							<th>Address</th>
 							<th>Contact #</th>
 							<th>Date of Birth</th>
@@ -69,6 +70,7 @@ $user_query = mysqli_query($con, $select_user);
 							<tr>
 								<td><?php echo $user_row['username']; ?></td>
 								<td><?php echo $user_row['fname'] . ' ' .  $user_row['mname'] . ' ' .  $user_row['lname']; ?></td>
+								<td><?php echo $user_row['rescue_type']; ?></td>
 								<td><?php echo $user_row['address']; ?></td>
 								<td><?php echo $user_row['cont_num']; ?></td>
 								<td><?php $dob = strtotime($user_row['date_of_birth']);

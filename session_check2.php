@@ -13,3 +13,4 @@ $_SESSION['lname'];
 $_SESSION['cont_num'];
 $_SESSION['username'];
 $_SESSION['address'];
+$_SESSION['rescue_type'];
