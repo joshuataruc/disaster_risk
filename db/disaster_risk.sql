@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 16, 2021 at 05:44 PM
+-- Generation Time: Nov 28, 2021 at 09:30 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.0
 
@@ -32,6 +32,7 @@ CREATE TABLE `admins` (
   `fname` varchar(50) NOT NULL,
   `mname` varchar(50) NOT NULL,
   `lname` varchar(50) NOT NULL,
+  `rescue_type` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
   `date_of_birth` varchar(20) NOT NULL,
   `cont_num` varchar(15) NOT NULL,
@@ -44,10 +45,11 @@ CREATE TABLE `admins` (
 -- Dumping data for table `admins`
 --
 
-INSERT INTO `admins` (`admin_id`, `fname`, `mname`, `lname`, `username`, `date_of_birth`, `cont_num`, `address`, `password`, `created_at`) VALUES
-(2, 'admin', 'admin', 'admin', 'admin', '0015-11-18', '09667615561', 'san jose', '0cc175b9c0f1b6a831c399e269772661', '2021/10/30 10:31:15 '),
-(3, 'joshua', '', 'taruc', 'imtaruc25', '1998-10-04', '09667615561', 'san jose tarlac city', '793a24b8af7505fd68ffe2bf8dcdceec', '2021/10/31 02:45:57 '),
-(5, 'b', 'b', 'b', 'b', '2021-10-09', '1', 'b', '92eb5ffee6ae2fec3ad71c777531578f', '2021/10/31 06:02:38 ');
+INSERT INTO `admins` (`admin_id`, `fname`, `mname`, `lname`, `rescue_type`, `username`, `date_of_birth`, `cont_num`, `address`, `password`, `created_at`) VALUES
+(6, 'test admin', 'test admin', 'test admin', 'Fire Emergency', 'test', '1998-10-04', '09300788582', 'tarlac city', '098f6bcd4621d373cade4e832627b4f6', '2021/11/28 08:32:08 '),
+(7, 'admin', 'admin', 'admin', 'Crime Emergency', 'admin', '2021-11-03', '22202202550', 'aaaaa', '21232f297a57a5a743894a0e4a801fc3', '2021/11/28 09:13:59 '),
+(8, 'barangay', 'barangay', 'barangay', 'Barangay Emergency', 'barangay', '2021-11-13', '54545454554', 'barangay', '1ee0fa80acf1af702cf55d07704548f6', '2021/11/28 09:15:05 '),
+(9, 'hospital', 'hospital', 'hospital', 'Medical Emergency', 'hospital', '2021-11-06', '22202220255', 'hospital', '8b42a1c9b8f9fde869f83c954b3d463b', '2021/11/28 09:16:20 ');
 
 -- --------------------------------------------------------
 
@@ -72,7 +74,8 @@ CREATE TABLE `events` (
 INSERT INTO `events` (`event_id`, `event_title`, `event_details`, `event_date`, `event_time`, `event_organizer`, `created_at`) VALUES
 (4, 'title', 'details', '2021-11-24', '15:55', 'organizer', '2021/11/16 04:45:04 pm'),
 (5, 'webinar2', '  firefight webinar', '2021-11-16', '08:30', 'san manuel firefighters', '2021/11/16 05:18:06 pm'),
-(6, 'fire protection', 'fire protection details', '2021-11-16', '00:00', 'firemens', '2021/11/16 05:30:55 pm');
+(6, 'fire protection', 'fire protection details', '2021-11-16', '00:00', 'firemens', '2021/11/16 05:30:55 pm'),
+(7, 'movie night', 'watch shang chi', '2021-11-19', '22:00', 'admins', '2021/11/16 05:53:58 pm');
 
 -- --------------------------------------------------------
 
@@ -102,7 +105,11 @@ INSERT INTO `notification` (`notif_id`, `sender_id`, `sender_fname`, `sender_lna
 (32, '2', 'test', 'test', 'test address', '2252525', 'Medical Emergency', '2021/10/30 10:53:17 pm'),
 (33, '2', 'test', 'test', 'test address', '2252525', 'Medical Emergency', '2021/10/30 10:53:44 pm'),
 (35, '2', 'test', 'test', 'test address', '2252525', 'Barangay Emergency', '2021/10/30 11:50:35 pm'),
-(36, '2', 'test', 'test', 'test address', '2252525', 'Crime Emergency', '2021/10/31 01:08:05 pm');
+(36, '2', 'test', 'test', 'test address', '2252525', 'Crime Emergency', '2021/10/31 01:08:05 pm'),
+(38, '4', 'vi', 'vi', 'iloilo city', '09500000000', 'Fire Emergency', '2021/11/28 04:05:47 pm'),
+(39, '4', 'vi', 'vi', 'iloilo city', '09500000000', 'Medical Emergency', '2021/11/28 04:21:47 pm'),
+(40, '4', 'vi', 'vi', 'iloilo city', '09500000000', 'Fire Emergency', '2021/11/28 04:24:26 pm'),
+(41, '4', 'vi', 'vi', 'iloilo city', '09500000000', 'Medical Emergency', '2021/11/28 04:24:27 pm');
 
 -- --------------------------------------------------------
 
@@ -160,8 +167,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `fname`, `mname`, `lname`, `username`, `date_of_birth`, `cont_num`, `address`, `password`, `created_at`) VALUES
-(2, 'test', 'test', 'test', 'test', '1998-10-04', '2252525', 'test address', '098f6bcd4621d373cade4e832627b4f6', '2021/10/28 03:09:51 '),
-(3, 'user', 'user', 'user', 'user', '2021-10-08', '54151454151', 'user', 'ee11cbb19052e40b07aac0ca060c23ee', '2021/10/30 11:30:32 ');
+(2, 'fname', 'test', 'lname', 'test', '1998-10-04', '00000', 'test address', 'd41d8cd98f00b204e9800998ecf8427e', '2021/10/28 03:09:51 '),
+(3, 'fname', 'user', 'lname', 'user', '2021-10-08', '54151454151', 'user', 'd41d8cd98f00b204e9800998ecf8427e', '2021/10/30 11:30:32 '),
+(4, 'vi', 'vi', 'vi', 'vi', '1996-05-18', '09500000000', 'iloilo city', '35b36b28916d38b34abddf832e286126', '2021/11/28 09:05:24 ');
 
 --
 -- Indexes for dumped tables
@@ -205,19 +213,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
-  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `events`
 --
 ALTER TABLE `events`
-  MODIFY `event_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `event_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `notification`
 --
 ALTER TABLE `notification`
-  MODIFY `notif_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `notif_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT for table `sos_reports`
@@ -229,7 +237,7 @@ ALTER TABLE `sos_reports`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
